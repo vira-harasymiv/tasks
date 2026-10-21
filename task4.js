@@ -1,9 +1,17 @@
-class User {
-  constructor(name) {
-    this.name = name;
-  }
-}
+const team1 = {
+  name: "Carolina Hurricanes",
+  hometown: "Raleigh",
+  stanleyCupQuantity: 1,
+  headCoach: "John Doe",
+};
 
-let qa = new User("QA");
+const team1Coaches = {
+  headCoach: "Rod Brind Amour",
+  assistantCoaches: ["Jeff Daniels", "Tim Gleason"],
+  goalTendingCoach: "Paul Schonfelder",
+  videoCoach: "Chris Huffine",
+  videoCoordinator: "John Stanier",
+};
 
-console.log(typeof qa);
+Object.assign(team1, team1Coaches);
+console.log(team1.headCoach);
